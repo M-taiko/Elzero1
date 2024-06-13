@@ -39,4 +39,4 @@ Route::get('/{page}', [App\Http\Controllers\AdminController::class ,'index'])->n
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\AdminController::class, 'index'])->name('index');
